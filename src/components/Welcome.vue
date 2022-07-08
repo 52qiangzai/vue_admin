@@ -31,6 +31,13 @@
           @click="nextMusic"
           >换个音乐</el-button
         >
+        <el-button
+          type="primary"
+          size="small"
+          style="margin-top: 10px"
+          @click="jumpGit"
+          >git仓库</el-button
+        >
         <audio
           ref="musicRef"
           :src="musicUrl"
@@ -58,16 +65,16 @@ export default {
       musicUrl:
         "http://m801.music.126.net/20220708112051/a05940b9474fc4177dce34f86e6e5584/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/14096612333/8f11/051b/3e91/8dbfd7d3fa7687f2408b19d1dfddf174.mp3",
       imageList: [
-        "https://static.q6q.cc/admin_vue_staticfiles/images/AddGood.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/CateGoryAdmin.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/GoodAdmin.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/GoodCateGory.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/LoginUser.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/OrderAdmin.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/ReportAdmin.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/RightAdmin.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/RoleAdmin.png",
-        "https://static.q6q.cc/admin_vue_staticfiles/images/UserAdmin.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/AddGood.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/CateGoryAdmin.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/GoodAdmin.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/GoodCateGory.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/LoginUser.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/OrderAdmin.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/ReportAdmin.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/RightAdmin.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/RoleAdmin.png",
+        "https://cdn.jsdelivr.net/gh/52qiangzai/vue_admin/public/images/UserAdmin.png",
       ],
     };
   },
@@ -118,6 +125,9 @@ export default {
             message: error,
           });
         });
+    },
+    jumpGit() {
+      location.href = "https://github.com/52qiangzai/vue_admin";
     },
   },
   mounted() {
