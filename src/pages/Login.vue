@@ -76,6 +76,7 @@ export default {
   methods: {
     resetForm(formName) {
       this.$refs[formName].resetFields();
+      this.formUserInfo = {};
     },
     // 登录验证
     submitForm(formName) {
